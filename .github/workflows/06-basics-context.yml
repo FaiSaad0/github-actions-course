@@ -1,0 +1,10 @@
+name: 06 context 
+
+on: workflow_dispatch
+
+jobs:
+  print-context-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print context data
+        run: echo ${{ github.actor }}
